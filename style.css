@@ -1,0 +1,158 @@
+@font-face {
+    font-family: Nunito;
+    src: url(Nunito.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:  Nunito;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    height: 70vh;
+    width: 25vw;
+    border: 1px solid gray;
+    border-radius: 4px;
+    word-wrap: break-word;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.head {
+    height: 11vh;
+    width: 25vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #50e3a4;
+    color: #ffffff;
+}
+
+#day,
+#date {
+    display: inline;
+}
+
+.time {
+    width: 7vw;
+    margin: 0 5px 0 0;
+}
+
+.title {
+    width: 12vw;
+    margin: 0 0 0 15px;
+    display: flexbox;
+    justify-content: center;
+}
+
+
+.list_item {
+    height: 60px;
+    border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#checkbox {
+    width: 60px;
+    cursor: pointer;
+}
+
+.task {
+    width: 250px;
+    overflow-wrap: break-word;
+}
+
+.btn {
+    height: 60px;
+    width: 60px;
+    font-size: 18px;
+    font-weight: 100;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #6df5ba;
+}
+
+.addlist {
+    display: flex;
+    justify-content: space-around;
+}
+
+.add {
+    background-image: url(addimg.png);
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.input {
+    height: 5vh;
+    width: 14vw;
+    padding: 0 0 0 20px;
+    border-radius: 50px;
+    margin: 5px 5px 5px 0;
+    border: 3px solid #bae0bd;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+    color: gray;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        /* height: 50vh; */
+        /* width: 50vw; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .content {
+        height: 100vh;
+        width: 100vw;
+        border: 1px solid gray;
+        border-radius: 4px;
+        word-wrap: break-word;
+        overflow: scroll;
+        scrollbar-width: none;
+    }
+
+    .head {
+        height: 11vh;
+        width: 100vw;
+    }
+
+    .time {
+        width: 28vw;
+        margin: 0 5px 0 0;
+    }
+
+    .title {
+        width: 30vw;
+    }
+
+    .input {
+        width: 70vw;
+        height: 4vh;
+    }
+}

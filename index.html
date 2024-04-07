@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="head">
+          <div class="title">
+            <h3>Todo List</h3>
+          </div>
+          <div class="time">
+            <h3 id="day">Saturday,</h3>
+            <h3 id="date">6th</h3>
+            <h3 id="month">April</h3>
+          </div>
+        </div>
+        <div class="addlist">
+        <input type="text" class="input" id="input" placeholder="Add a new list">
+        <div class="add" id="add" onclick="checkInput()"></div>
+      </div>
+          <div id="todoList"></div>
+      </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
