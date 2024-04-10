@@ -43,7 +43,7 @@
 }
 
 .time {
-    width: 7vw;
+    width: 11vw;
     margin: 0 5px 0 0;
 }
 
@@ -143,8 +143,7 @@
     }
 
     .time {
-        width: 28vw;
-        margin: 0 5px 0 0;
+      width: 35vw;
     }
 
     .title {
